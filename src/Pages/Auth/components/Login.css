@@ -1,0 +1,156 @@
+
+
+.container-main{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 10px;
+}
+
+.logo-mobile{
+    display: none;
+}
+
+.card-login p{
+    color: #AAAAAA;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 75%;
+    align-self: center;
+    
+}
+
+.card-login h2{
+
+    text-align: center;
+    color: #5F2EEA;
+    margin-top: 1rem;
+}
+
+.card-login form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    line-height: 4;
+}
+
+.email{
+    margin: 0 3rem;
+}
+
+.email input{
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid #5F2EEA;
+    font-size: 0.8rem;
+}
+  
+.password{
+    margin: 0 3rem;
+}
+.password input{
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid #5F2EEA;
+    font-size: 00.8rem;
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 1rem 3rem;
+}
+
+.btn-signin {
+
+    background-color: #5F2EEA;
+    color: #fff;
+    border: #5F2EEA;
+    border-radius: 5px;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+
+  p a {
+    text-decoration: none;
+  }
+
+  /* .btn-signup:hover {
+    background-color: #3909bd;
+    color: white;
+  } */
+
+  
+
+  @media only screen and  (max-width: 480px) {
+
+    .card-login{
+        margin: 3rem 0 3rem 4rem;
+    }
+
+    .logo-mobile{
+        display: unset;
+    }
+
+    input[type=text], select {
+        width: 80%;
+        padding: 1rem 1rem;
+        margin: 0.5rem 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+    
+    .button {
+        background-color: #5F2EEA;
+        color: #5F2EEA;
+        
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.5rem;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        
+      }
+    
+      .btn-signup {
+        background-color: #5F2EEA; 
+        color: #fff; 
+        font-size: 1rem;
+        border: 0 ;
+        border-radius: 5px;
+      }
+
+      .submit p{
+        display: flex;
+        /* margin: 2rem 0 0 -3.5rem; */
+    }
+
+  }
