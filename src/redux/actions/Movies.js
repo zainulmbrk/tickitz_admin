@@ -70,7 +70,7 @@ export const GetMovies = () => {
     dispatch(GetMoviesRequest())
     axios({
       method: 'GET',
-      url: 'http://localhost:9511/api/v5/movies',
+      url: `https://tickitzz.herokuapp.com/api/v5/movies`,
     })
       .then((res) => {
         dispatch(GetMoviesSuccess(res.data.data))
@@ -99,7 +99,7 @@ export const PostMovies = (
     dispatch(PostMoviesRequest())
     axios({
       method: 'POST',
-      url: 'http://localhost:9511/api/v5/movies',
+      url: `https://tickitzz.herokuapp.com/api/v5/movies`,
       data: {
         title: title,
         genre: genre,
@@ -131,7 +131,7 @@ export const DeleteMovies = (movies_id, token) => {
     dispatch(DeleteMoviesRequest())
     axios({
       method: 'DELETE',
-      url: `http://localhost:9511/api/v5/movies/${movies_id}`,
+      url: `https://tickitzz.herokuapp.com/api/v5/movies/${movies_id}`,
       headers: {
         Authorization: token,
       },

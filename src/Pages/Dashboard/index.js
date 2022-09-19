@@ -18,7 +18,7 @@ export const Dashboard = () => {
   useEffect(() => {
     axios({
       method: 'GET',
-      url: `http://localhost:9511/api/v5/movies/?title=${query}`,
+      url: `https://tickitzz.herokuapp.com/api/v5/movies/?title=${query}`,
     })
       .then((res) => {
         setDataMovie(res.data.data)
@@ -58,7 +58,7 @@ export const Dashboard = () => {
     try {
       const results = await axios({
         method: 'POST',
-        url: `http://localhost:9511/api/v5/movies`,
+        url: `https://tickitzz.herokuapp.com/api/v5/movies`,
         data: formData,
         headers: {
           authorization: data.token,
@@ -79,7 +79,7 @@ export const Dashboard = () => {
     try {
       const result = await axios({
         method: 'DELETE',
-        url: `http://localhost:9511/api/v5/movies/${movies_id}`,
+        url: `https://tickitzz.herokuapp.com/api/v5/movies/${movies_id}`,
         headers: {
           authorization: datas.token,
         },
@@ -108,7 +108,7 @@ export const Dashboard = () => {
     try {
       const results = await axios({
         method: 'PATCH',
-        url: `http://localhost:9511/api/v5/movies/${movies_id}`,
+        url: `https://tickitzz.herokuapp.com/api/v5/movies/${movies_id}`,
         data: formData,
         headers: {
           authorization: data.token,
